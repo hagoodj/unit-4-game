@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<!-- Jumbotron for Title -->
+<!-- Jumbotron for Title and Instructions-->
 <div class="jumbotron">
     <h1 class="text-center">Point Collector</h1>
     <h2 class="text-center">How to play:</h2>
@@ -27,6 +27,7 @@
     <h4 class="text-center">The amount of points in each box is hidden from you until you click on it.</h4>
     <h4 class="text-center">The random number and contents of each box change each game.</h4>
     <br>
+    <!-- Start Button -->
     <div class="container">
         <div class="row justify-content-center">
             <button id="button-start" class="btn btn-success" value="start"><span>Start</span></button>
@@ -34,10 +35,12 @@
     </div>
 </div>
 
+<!-- Container for all game content -->
 <div class="container">
 
     <div class="row">
 
+    <!-- Column containing buttons -->
       <div class="col-lg-8">
         <div class="card">
           <h3 class="card-header">Boxes</h3>
@@ -52,6 +55,7 @@
         </div>
       </div>
 
+      <!-- Column and row containing card with target score and user score -->
       <div class="col-lg-4">
           <div class = "row">
             <div class="card">
@@ -63,6 +67,7 @@
             </div>
             </div>
         </div>
+        <!-- Row containing card with game results -->
         <div class="row">
             <div class="card">
                 <h3 class="card-header">Game Results</h3>
@@ -74,6 +79,7 @@
         </div>
       </div>
 
+      <!-- link to javascript file -->
       <script src="./assets/javascript/game.js"></script>
 
       </div>

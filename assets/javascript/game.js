@@ -25,4 +25,34 @@ $(document).ready(function() {
 
     })
 
-}
+    $("#button-1").on("click", function() {
+
+        totalScore = totalScore + value1;
+
+        if (totalScore < computerNumber) {
+            totalScore = totalScore;
+            $("#your-score").html("Your Score: " + totalScore);       
+        };
+
+        if (totalScore > computerNumber) {
+            $("#your-score").html("Your Score: " + totalScore);
+            losses++
+            $("losses").html("Losses: " + losses);
+            alert("Press start to play again!")
+            computerNumber = "";
+            totalScore = 0;
+            value1 = 0;
+        }
+
+        if (totalScore === computerNumber) {
+            $("#total-score").html("Your Score: " + totalScore);
+            wins++
+            $("#wins").html("Wins: " + wins);
+            alert("Press start to play again!")
+            computerNumber = "";
+            totalScore = 0;
+        }
+
+    })
+
+});
