@@ -12,16 +12,16 @@ $(document).ready(function() {
 
     $("#button-start").on("click", function() {
 
-        computerNumber = Math.floor(Math.random()*200) + 1;
+        computerNumber = Math.floor(Math.random()*100) + 20;
         totalScore = 0;
         $("#target-score").html("Target Score: " + computerNumber); 
         $("#your-score").html("Your Score: " + totalScore); 
         $("#wins").html("Wins: " + wins); 
         $("#losses").html("Losses: " + losses); 
-        value1 = Math.floor(Math.random()*20) + 1;
-        value2 = Math.floor(Math.random()*20) + 1;
-        value3 = Math.floor(Math.random()*20) + 1;
-        value4 = Math.floor(Math.random()*20) + 1;
+        value1 = Math.floor(Math.random()*11) + 2;
+        value2 = Math.floor(Math.random()*11) + 2;
+        value3 = Math.floor(Math.random()*11) + 2;
+        value4 = Math.floor(Math.random()*11) + 2;
 
     })
 
