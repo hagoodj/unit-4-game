@@ -10,7 +10,26 @@ $(document).ready(function() {
     var value2;
     var value4;
 
-    $("#button-start").on("click", function() {
+    computerNumber = Math.floor(Math.random()*100) + 20;
+    totalScore = 0;
+    $("#target-score").html("Target Score: " + computerNumber); 
+    $("#your-score").html("Your Score: " + totalScore); 
+    $("#wins").html("Wins: " + wins); 
+    $("#losses").html("Losses: " + losses); 
+    value1 = Math.floor(Math.random()*11) + 2;
+    value2 = Math.floor(Math.random()*11) + 2;
+    value3 = Math.floor(Math.random()*11) + 2;
+    value4 = Math.floor(Math.random()*11) + 2;
+
+    function reset () {
+
+        computerNumber = "";
+        totalScore = 0;
+    
+        value1 = 0;
+        value2 = 0;
+        value2 = 0;
+        value4 = 0;
 
         computerNumber = Math.floor(Math.random()*100) + 20;
         totalScore = 0;
@@ -23,7 +42,7 @@ $(document).ready(function() {
         value3 = Math.floor(Math.random()*11) + 2;
         value4 = Math.floor(Math.random()*11) + 2;
 
-    })
+    }
 
     $("#button-1").on("click", function() {
 
@@ -38,19 +57,21 @@ $(document).ready(function() {
             $("#your-score").html("Your Score: " + totalScore);
             losses++
             $("losses").html("Losses: " + losses);
-            alert("Press start to play again!")
+            alert("Try again!")
             computerNumber = "";
             totalScore = 0;
             value1 = 0;
+            reset();
         }
 
         if (totalScore === computerNumber) {
             $("#total-score").html("Your Score: " + totalScore);
             wins++
             $("#wins").html("Wins: " + wins);
-            alert("Press start to play again!")
+            alert("Winner! Play again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
     })
@@ -67,18 +88,20 @@ $(document).ready(function() {
             $("#your-score").html("Your Score: " + totalScore);
             losses++
              $("losses").html("Losses: " + losses);
-             alert("Press start to play again!")
+             alert("Try again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
         if (totalScore === computerNumber) {
             $("#total-score").html("Your Score: " + totalScore);
             wins++
             $("#wins").html("Wins: " + wins);
-            alert("Press start to play again!")
+            alert("Winner! Play again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
     })
@@ -95,18 +118,20 @@ $(document).ready(function() {
             $("#your-score").html("Your Score: " + totalScore);
             losses++
             $("losses").html("Losses: " + losses);
-            alert("Press start to play again!")
+            alert("Try again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
         if (totalScore === computerNumber) {
             $("#total-score").html("Your Score: " + totalScore);
             wins++
             $("#wins").html("Wins: " + wins);
-            alert("Press start to play again!")
+            alert("Winner! Play again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
     })
@@ -123,18 +148,20 @@ $(document).ready(function() {
             $("#your-score").html("Your Score: " + totalScore);
             losses++
             $("losses").html("Losses: " + losses);
-            alert("Press start to play again!")
+            alert("Try again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
         if (totalScore === computerNumber) {
             $("#your-score").html("Your Score: " + totalScore);
             wins++
             $("#wins").html("Wins: " + wins);
-            alert("Press start to play again!")
+            alert("Winner! Play again!")
             computerNumber = "";
             totalScore = 0;
+            reset();
         }
 
     })
